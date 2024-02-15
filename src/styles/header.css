@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.header__container {
+  display: flex;
+  z-index: 50;
+  width: 80%;
+  align-self: center;
+  padding: 2rem;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--logo-text-gradient);
+  backdrop-filter: blur(14px);
+}
+.logo__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 85%;
+  align-items: center;
+}
+.header__logo {
+  font-size:2.6rem;
+  font-weight: 600;
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(60% + 5px);
+}
+
+.header__menu > ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__link {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.menu__link:hover{
+    color:var(--main-color);
+}
+.header__icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.icon__img--login {
+  width: 26.783px;
+  height: 43.291px;
+  flex-shrink: 0;
+}
+.icon__img--login:hover, .icon__img--cart:hover {
+    filter: var(--icon-change-color);
+}
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width:845px){
+    .header__container {
+        z-index: 50;
+        width: 84%;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .logo__nav {
+        display: flex;
+        gap: 3rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+@media screen and (max-width:776px){
+    .header__container {
+        z-index: 50;
+        width: 84%;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .logo__nav{
+        gap: 1rem;
+    }
+
+    .logo__nav{
+        flex-direction: row-reverse;
+    }
+    .header__logo{
+        font-size: 2rem;
+    }
+    .menu__list{
+        flex-direction: column;
+    position: fixed;
+    background: #1c0032;
+    height: 50dvh;
+    width: 86vw;
+    left: 0;
+    z-index: 30;
+    transform: translate(0%,-64%);
+    opacity: 0;
+    }
+    .logo__nav{
+        width: auto;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        background-color: var(--main-color);
+    }
+
+}

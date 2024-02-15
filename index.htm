@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./src/img/Burger.png" type="image/x-icon">
+    <!-- CDNs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/form-section.css">
+</head>
+
+<body class="body--bg">
+    <header class="header">
+        <div class="header__container">
+            <button class="hamburger" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            <div class="logo__nav">
+                <h3 class="header__logo">HungryTime</h3>
+                <nav class="header__menu panel">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Hamburguesas</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Pizza</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Pollo</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Acerca</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__icons">
+                <a href="#"><img class="icon__img--login" src="./src/svg/Login.svg" alt=""></a>
+                <a href="#"><img class="icon__img--cart" src="./src/svg/cart.svg" alt=""></a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="login">
+            <div class="icons__container">
+                <img class="icon icon--burger" src="./src/img/Burger.png" alt="Burger">
+                <img class="icon icon--pizza" src="./src/img/Pizza.png" alt="Pizza">
+                <img class="icon icon--fries" src="./src/img/Fries.png" alt="Fries">
+                <img class="icon icon--drink" src="./src/img/Drink.png" alt="Drink">
+            </div>
+            <form class="login__form">
+                <h3 class="form__title">Iniciar Sesión</h3>
+                <label class="form__label" for="email">Correo electrónico</label>
+                <input class="form__input" type="text" name="email" id="email" placeholder="correo@ejemplo.com">
+                <label class="form__label" for="password">Correo electrónico</label>
+                <input class="form__input" type="password" name="email" id="password"
+                    placeholder="Ingresa tu contraseña">
+                <input class="form__button" type="submit" value="Login">
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
